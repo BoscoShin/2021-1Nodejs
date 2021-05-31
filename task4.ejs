@@ -1,0 +1,82 @@
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<body>
+    <div id="container" style="width:100%; height:400px;"></div> 
+    <input type="button" name="Task2" value="Task1" onclick="task1()"> 
+    <input type="button" name="Task2" value="Task2" onclick="task2()"> 
+    <input type="button" name="Task3" value="Task3" onclick="task3()"> 
+    <input type="button" name="Task4" value="Task4" onclick="task4()"> 
+    <input type="button" name="Task5" value="Task5" onclick="task5()">
+      
+</body>
+
+
+
+<script>
+    Highcharts.chart('container', {
+ 
+     title: {
+     text: 'Task4의 Core 별 MAX, MIN, AVG '
+   
+     },
+     subtitle: {
+     text: '20170839 신원섭'
+     },
+   
+   
+     yAxis: {
+     title: {
+         text: 'value'
+     }
+     },
+   
+     xAxis: {
+     categories: ['core1', 'core2', 'core3', 'core4', 'core5']
+     },
+   
+     /* 범례를 우측 세로로 정렬 */
+     legend: {
+     layout: 'vertical',
+     align: 'right',
+     verticalAlign: 'middle'
+     },
+   
+     series: [{ // 범례들의 값
+     name: 'MAX',
+     data: [1023, 1067, 1064, 1057, 2015]
+     }, {
+     name: 'MIN',
+     data: [909, 891, 901, 908, 926]
+     }, {
+     name: 'AVG',
+     data: [975.8, 1007.5, 985.2, 958.2, 1111.4]
+     }],
+     });
+ </script>
+
+<script>
+  function task1() {
+    window.location.href = './graph'
+  }
+</script>
+
+<script>
+    function task2() {
+      window.location.href = './task2'
+    }
+  </script>
+
+  <script>
+    function task3() {
+      window.location.href = './task3'
+    }
+  </script>
+  <script>
+    function task4() {
+      window.location.href = './task4'
+    }
+  </script>
+  <script>
+    function task5() {
+      window.location.href = './task5'
+    }
+  </script>
