@@ -20,7 +20,7 @@ const storage = multer.memoryStorage();
 var Upload = multer ({storage: storage}); // 메모리에 저장
 
 // 프론트와 연동 
-app.get('/', (req, res) => {  //test1.pug 출력
+app.get('/', (req, res) => {  //file.ejs 출력
 
   res.render('file');
 });
