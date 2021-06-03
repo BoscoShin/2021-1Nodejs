@@ -1,0 +1,27 @@
+  <head>
+    <title>nodejsFileUPload</title>
+  </head>  
+        
+    <body>      
+      <form action="/graph">
+        <h1>데이터를 그래프에 입력하시겠습니까?</h1>
+        <br>
+        <input type="submit" value="입력" onclick="graph()">
+        <br>
+        <br>
+        <input type="button" value = "이전으로" onclick = "move()">
+      </form>
+    </body>
+
+     
+<script>
+  function move() {
+    window.location.href = '/'
+  }
+  </script>
+  
+<script>
+  function graph() {
+    window.location.href = './graph'
+  }
+</script>

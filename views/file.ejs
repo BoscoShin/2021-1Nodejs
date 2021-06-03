@@ -1,0 +1,16 @@
+    <head></head>   
+         
+    <body>
+      <h1>node js 파일 업로드</h1>
+      <p>컴퓨터공학과 20170839 신원섭</p>
+      <form action="/upload" method="POST" enctype="multipart/form-data">
+          <input type="file" name="userfile">
+          <input type="submit" onclick="move()">
+      </form>
+    </body>
+<script>
+  function move() {
+    window.location.href = './upload'
+  }
+</script>
+  
